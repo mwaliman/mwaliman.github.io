@@ -34,20 +34,6 @@ Sometimes I also <a href="https://www.youtube.com/watch?v=Q1qJ6_Uwj4A" target="_
 
 <!-- Details are in my [CV]({{ "/cv/" | relative_url }}). -->
 
-<!-- ## Projects
-
-<div class="featured-projects">
-  {% assign sorted_projects = site.data.projects | sort: 'highlight' %}
-  {% for project in sorted_projects %}
-    {% if project.highlight %}
-      {% include project.html project=project %}
-    {% endif %}
-  {% endfor %}
-</div>
-<a href="{{ "/projects/" | relative_url }}" class="button">
-  <i class="fa fa-chevron-circle-right"></i>
-  Show More Projects
-</a> -->
 
 ## Publications
 
@@ -69,6 +55,17 @@ Sometimes I also <a href="https://www.youtube.com/watch?v=Q1qJ6_Uwj4A" target="_
   <i class="fas fa-chevron-circle-right"></i>
   Show All Publications
 </a> -->
+
+## Projects
+
+<div class="featured-projects">
+  {% assign sorted_projects = site.data.projects | sort: 'highlight' %}
+  {% for project in sorted_projects %}
+    {% if project.highlight %}
+      {% include project.html project=project %}
+    {% endif %}
+  {% endfor %}
+</div>
 
 <div class="news-travel" markdown="1">
 
