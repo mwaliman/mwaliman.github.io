@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="application-name" content="Matthew Waliman">
   <meta name="theme-color" content="#b00">
-  <link rel="shortcut icon" href="/mwaliman/favicon.ico"/>
-  <link rel="icon" type="image/png" href="/mwaliman/favicon.png" sizes="250x250" />
+  <link rel="shortcut icon" href="/favicon.ico"/>
+  <link rel="icon" type="image/png" href="/favicon.png" sizes="250x250" />
 
   <!-- Begin Jekyll SEO tag v2.7.1 -->
 <title>Scanning Photo Albums | Matthew Waliman</title>
@@ -16,8 +16,8 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="How we are scanning dozens of photo albums and process them with open source tools" />
 <meta property="og:description" content="How we are scanning dozens of photo albums and process them with open source tools" />
-<link rel="canonical" href="http://localhost:4000/mwaliman/blog/2021/01/photo-scans.html" />
-<meta property="og:url" content="http://localhost:4000/mwaliman/blog/2021/01/photo-scans.html" />
+<link rel="canonical" href="http://localhost:4000/blog/2021/01/photo-scans.html" />
+<meta property="og:url" content="http://localhost:4000/blog/2021/01/photo-scans.html" />
 <meta property="og:site_name" content="Matthew Waliman" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-01-28T00:00:00-08:00" />
@@ -25,15 +25,15 @@
 <meta property="twitter:title" content="Scanning Photo Albums" />
 <meta name="twitter:site" content="@domoritz" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/mwaliman/blog/2021/01/photo-scans.html","headline":"Scanning Photo Albums","dateModified":"2021-01-28T00:00:00-08:00","datePublished":"2021-01-28T00:00:00-08:00","description":"How we are scanning dozens of photo albums and process them with open source tools","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/mwaliman/blog/2021/01/photo-scans.html"},"@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"url":"http://localhost:4000/blog/2021/01/photo-scans.html","headline":"Scanning Photo Albums","dateModified":"2021-01-28T00:00:00-08:00","datePublished":"2021-01-28T00:00:00-08:00","description":"How we are scanning dozens of photo albums and process them with open source tools","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2021/01/photo-scans.html"},"@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <link rel="alternate" type="application/rss+xml" title="Matthew Waliman" href="http://localhost:4000/mwaliman/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="Matthew Waliman" href="http://localhost:4000/feed.xml">
   <!-- <script src="https://use.fontawesome.com/a69bd0220f.js"></script> -->
 
   <link href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="stylesheet">
-  <link href="/mwaliman/styles.css" rel="stylesheet">
+  <link href="/styles.css" rel="stylesheet">
 </head>
 
   <body>
@@ -42,11 +42,11 @@
   <nav class="container">
     <a class="site-title" href="/">Matthew Waliman</a>
 
-    <!-- <a href="/mwaliman/projects/" >Projects</a> -->
-    <a href="/mwaliman/publications/" >Publications</a>
-    <!-- <a href="/mwaliman/talks/" >Talks</a> -->
-    <!-- <a href="/mwaliman/blog/" class="active">Blog</a> -->
-    <a href="/mwaliman/cv/" >CV</a>
+    <!-- <a href="/projects/" >Projects</a> -->
+    <a href="/publications/" >Publications</a>
+    <!-- <a href="/talks/" >Talks</a> -->
+    <!-- <a href="/blog/" class="active">Blog</a> -->
+    <a href="/cv/" >CV</a>
 
     <span class="external">
       <!-- <a href="https://twitter.com/domoritz"><i class="fab fa-twitter"></i> Twitter</a> -->
@@ -89,7 +89,7 @@
 <p>Now we have a folder full of scans such as this one scan.</p>
 
 <picture>
-<img src="/mwaliman/images/scan.jpg" width="300" alt="Four family pictures scanned in a single image" />
+<img src="/images/scan.jpg" width="300" alt="Four family pictures scanned in a single image" />
 </picture>
 
 <p>Note that all scans have the name <code class="language-plaintext highlighter-rouge">Combi_{}.tiff</code>. The rest of my scripts assume this name and so if you follow this post, make sure to set the right name in Image Capture.</p>
@@ -109,19 +109,19 @@
 <p>Multicrop runs some algorithms to find a mask such as this one.</p>
 
 <picture>
-<img src="/mwaliman/images/mask.png" width="200" alt="Red rectangles corresponding to the four images" />
+<img src="/images/mask.png" width="200" alt="Red rectangles corresponding to the four images" />
 </picture>
 
 <p>Don’t worry if the masks are not perfect. Multicrop then uses the mask to find the images to segment and outputs segmented images such as these four.</p>
 
 <picture>
-<img src="/mwaliman/images/split.png" width="700" alt="Four images in finder" />
+<img src="/images/split.png" width="700" alt="Four images in finder" />
 </picture>
 
 <p>Multicrop takes a while to process images so you can grab a beverage of your choice while your computer is hard at work (such as mine was as you can see below).</p>
 
 <picture>
-<img src="/mwaliman/images/cpu.png" width="300" alt="CPU usage chart showing high CPU usage" />
+<img src="/images/cpu.png" width="300" alt="CPU usage chart showing high CPU usage" />
 </picture>
 
 <h2 id="fixing-orientation-and-converting-to-jpeg">Fixing orientation and converting to JPEG</h2>
@@ -183,14 +183,14 @@ Setting dates for Combi_28_split-00*.*
   </article>
 
   <section class="post-sharing">
-    <a class="twitter" href="https://twitter.com/intent/tweet?text=Scanning Photo Albums&url=http://localhost:4000/mwaliman/blog/2021/01/photo-scans.html&via=&related=" title="Share this post on Twitter"><i class="fab fa-twitter"></i> Tweet</a>
+    <a class="twitter" href="https://twitter.com/intent/tweet?text=Scanning Photo Albums&url=http://localhost:4000/blog/2021/01/photo-scans.html&via=&related=" title="Share this post on Twitter"><i class="fab fa-twitter"></i> Tweet</a>
   </section>
 
   <div class="blog-links">
   
     <div>
       <i class="fas fa-md fa-chevron-left"></i>
-      <a href="/mwaliman/blog/2018/10/draco-representing-applying-learning-vis-design.html" title="Previous Post: Draco: Representing, Applying & Learning Visualization Design">Draco: Representing, Applying & Learning Visualization Design</a>
+      <a href="/blog/2018/10/draco-representing-applying-learning-vis-design.html" title="Previous Post: Draco: Representing, Applying & Learning Visualization Design">Draco: Representing, Applying & Learning Visualization Design</a>
     </div>
   
   
