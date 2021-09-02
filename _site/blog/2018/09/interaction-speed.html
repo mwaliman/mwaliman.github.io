@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="application-name" content="Matthew Waliman">
+  <meta name="theme-color" content="#b00">
+  <link rel="shortcut icon" href="/mwaliman/favicon.ico"/>
+  <link rel="icon" type="image/png" href="/mwaliman/favicon.png" sizes="250x250" />
+
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>How fast is fast enough? | Matthew Waliman</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="How fast is fast enough?" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Rule of thumb for latency in interactive visualization." />
+<meta property="og:description" content="Rule of thumb for latency in interactive visualization." />
+<link rel="canonical" href="http://localhost:4000/mwaliman/blog/2018/09/interaction-speed.html" />
+<meta property="og:url" content="http://localhost:4000/mwaliman/blog/2018/09/interaction-speed.html" />
+<meta property="og:site_name" content="Matthew Waliman" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-09-11T00:00:00-07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="How fast is fast enough?" />
+<meta name="twitter:site" content="@domoritz" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/mwaliman/blog/2018/09/interaction-speed.html","headline":"How fast is fast enough?","dateModified":"2018-09-11T00:00:00-07:00","datePublished":"2018-09-11T00:00:00-07:00","description":"Rule of thumb for latency in interactive visualization.","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/mwaliman/blog/2018/09/interaction-speed.html"},"@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <link rel="alternate" type="application/rss+xml" title="Matthew Waliman" href="http://localhost:4000/mwaliman/feed.xml">
+  <!-- <script src="https://use.fontawesome.com/a69bd0220f.js"></script> -->
+
+  <link href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="stylesheet">
+  <link href="/mwaliman/styles.css" rel="stylesheet">
+</head>
+
+  <body>
+    
+<header class="page-header">
+  <nav class="container">
+    <a class="site-title" href="/">Matthew Waliman</a>
+
+    <!-- <a href="/mwaliman/projects/" >Projects</a> -->
+    <a href="/mwaliman/publications/" >Publications</a>
+    <!-- <a href="/mwaliman/talks/" >Talks</a> -->
+    <!-- <a href="/mwaliman/blog/" class="active">Blog</a> -->
+    <a href="/mwaliman/cv/" >CV</a>
+
+    <span class="external">
+      <!-- <a href="https://twitter.com/domoritz"><i class="fab fa-twitter"></i> Twitter</a> -->
+      <a href="mailto:mwaliman@ucla.edu"> mwaliman@ucla.edu</a>
+      <!-- <a href="https://github.com/domoritz"><i class="fab fa-github"></i> GitHub</a> -->
+    </span>
+  </nav>
+</header>
+
+
+    <div class="page-content">
+      <section class="container post">
+  <header class="post-header">
+    <h1 class="post-title">How fast is fast enough?</h1>
+    <p class="post-subtitle">Rule of thumb for latency in interactive visualization.</p>
+    <p class="post-meta">
+      Published on Sep 11, 2018
+      
+      
+      </p>
+  </header>
+
+  <article class="post-content">
+    <p>To support effective exploration, visualization systems need to be fast. Liu and Heer showed <a href="https://idl.cs.washington.edu/papers/latency/">in their paper</a> that an additional latency of 500ms negatively affects the user’s behavior. They even found that the negative effects continue even after the delay is removed. Unfortunately, some system designers misunderstood the 500ms as a threshold that should be met. However, the paper only talks about the difference of low vs high latency and the goal should be low-latency.</p>
+
+<p>The paper also found that some interactions are more latency sensitive than others. For example, zooming is not as latency sensitive as panning. Sending a query through a form <a href="https://services.google.com/fh/files/blogs/google_delayexp.pdf">should return results quickly</a> but 60fps (16ms) is probably not quite necessary. So when you are designing a system, what latency should you aim for? Until we have further evidence for particular thresholds, we could use a guideline.</p>
+
+<p>As a rule of thumb, I am proposing that we require that <strong>latency should be lower than the shortest time between any two user queries</strong>. This rule is motivated by the fact that responses arrive before the user can send the next query. As an extreme example, in <a href="https://vega.github.io/vega/examples/crossfilter-flights/">crossfiltering</a> every movement of the brush fires a new query and delayed responses would display outdated information.</p>
+
+<p>I think this rule could provide a reasonable upper bound but not necessarily a lower bound. For example, just because it takes me a ten seconds to write a search query on Google, I would not want to wait ten seconds.</p>
+
+  </article>
+
+  <section class="post-sharing">
+    <a class="twitter" href="https://twitter.com/intent/tweet?text=How fast is fast enough?&url=http://localhost:4000/mwaliman/blog/2018/09/interaction-speed.html&via=&related=" title="Share this post on Twitter"><i class="fab fa-twitter"></i> Tweet</a>
+  </section>
+
+  <div class="blog-links">
+  
+    <div>
+      <i class="fas fa-md fa-chevron-left"></i>
+      <a href="/mwaliman/blog/2018/06/value-suppressing-uncertainty-palettes.html" title="Previous Post: Value-Suppressing Uncertainty Palettes">Value-Suppressing Uncertainty Palettes</a>
+    </div>
+  
+  
+    <div>
+      <a href="/mwaliman/blog/2018/10/draco-representing-applying-learning-vis-design.html" title="Next Post: ">Draco: Representing, Applying & Learning Visualization Design</a>
+      <i class="fas fa-md fa-chevron-right"></i>
+    </div>
+  
+  </div>
+</section>
+
+    </div>
+
+    <footer>
+  <div class="container">
+    <div class="footer-col">
+      Matthew Waliman<br/>
+      <!-- <a href="mailto:mwaliman@ucla.edu">mwaliman@ucla.edu</a> <br/> -->
+      Last updated September 2021
+    </div>
+
+    <div class="footer-col site-desc">Electrical and Computer Engineering M.S. student at UCLA. 
+ <br> <a href="https://github.com/domoritz/domoritz.github.io"> Site Template by Dominik Moritz</a></div>
+  </div>
+</footer>
+
+
+<!-- 
+<div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Matthew Waliman</li><li><a class="u-email" href="mailto:mwaliman@ucla.edu">mwaliman@ucla.edu</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+            <li><a href="https://github.com/andrewhead"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">andrewhead</span></a></li>
+
+            <li><a href="https://www.twitter.com/drewmikehead"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">drewmikehead</span></a></li>
+        </ul>
+</div>
+
+      
+    </div> -->
+    <script>
+  function trim(str) {
+    return str.replace(/^\s+|\s+$/g, '');
+  }
+  var headers = document.querySelectorAll("h2, h3, h4, h5, h6");
+  for (var i=0; i<headers.length; i++) {
+    var h = headers[i];
+    var name = h.getAttribute("id");
+    var title = h.innerHTML;
+    h.innerHTML = '<a href="#' + name + '" class="anchor"><i class="fas fa-hashtag"></i></a>' + trim(title);
+  }
+</script>
+
+  </body>
+</html>

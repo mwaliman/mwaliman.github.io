@@ -1,0 +1,27 @@
+- title: Computational Research Scientist
+  years: 2019-2021
+  company: UCSF
+  location: San Francisco, CA
+  description: In collaboration with the PowerBI team, we developed visualization alternatives that scale to large numbers of records. So far, we have submitted a paper and a patent on part of this project but there is more to come. As a side project, I worked on visualization recommendation using constraints.
+- title: Research Engineer
+  years: 2018-2019
+  company: Signetron Inc.
+  location: Berkeley, CA
+  skills:
+    - Machine Learning
+- title: Test Automation Intern
+  years: 2016
+  company: Ayar Labs
+  location: San Francisco, CA
+  skills:
+    - Machine Learning
+    - Python
+- title: Research Assistant
+  years: 2015-2018
+  company: UC Berkeley
+  location: Berkeley, CA
+  description: Developed and user tested a UI for an approximate query processing system. Published a CHI paper, two workshop papers, and [filed](https://patents.google.com/patent/US20180260451A1) [three](https://patents.google.com/patent/US20180260985A1) [patents](https://patents.google.com/patent/US20180260450A1).
+  mentors:
+    - Avideh Zakhor
+    - Ren Ng
+    - Bjoern Hartmann

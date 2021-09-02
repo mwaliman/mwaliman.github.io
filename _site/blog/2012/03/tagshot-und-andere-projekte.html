@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="application-name" content="Matthew Waliman">
+  <meta name="theme-color" content="#b00">
+  <link rel="shortcut icon" href="/mwaliman/favicon.ico"/>
+  <link rel="icon" type="image/png" href="/mwaliman/favicon.png" sizes="250x250" />
+
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Tagshot und andere Projekte | Matthew Waliman</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Tagshot und andere Projekte" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Fotoverwaltung im Browser" />
+<meta property="og:description" content="Fotoverwaltung im Browser" />
+<link rel="canonical" href="http://localhost:4000/mwaliman/blog/2012/03/tagshot-und-andere-projekte.html" />
+<meta property="og:url" content="http://localhost:4000/mwaliman/blog/2012/03/tagshot-und-andere-projekte.html" />
+<meta property="og:site_name" content="Matthew Waliman" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2012-03-17T06:30:02-07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Tagshot und andere Projekte" />
+<meta name="twitter:site" content="@domoritz" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/mwaliman/blog/2012/03/tagshot-und-andere-projekte.html","headline":"Tagshot und andere Projekte","dateModified":"2012-03-17T06:30:02-07:00","datePublished":"2012-03-17T06:30:02-07:00","description":"Fotoverwaltung im Browser","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/mwaliman/blog/2012/03/tagshot-und-andere-projekte.html"},"@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <link rel="alternate" type="application/rss+xml" title="Matthew Waliman" href="http://localhost:4000/mwaliman/feed.xml">
+  <!-- <script src="https://use.fontawesome.com/a69bd0220f.js"></script> -->
+
+  <link href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="stylesheet">
+  <link href="/mwaliman/styles.css" rel="stylesheet">
+</head>
+
+  <body>
+    
+<header class="page-header">
+  <nav class="container">
+    <a class="site-title" href="/">Matthew Waliman</a>
+
+    <!-- <a href="/mwaliman/projects/" >Projects</a> -->
+    <a href="/mwaliman/publications/" >Publications</a>
+    <!-- <a href="/mwaliman/talks/" >Talks</a> -->
+    <!-- <a href="/mwaliman/blog/" class="active">Blog</a> -->
+    <a href="/mwaliman/cv/" >CV</a>
+
+    <span class="external">
+      <!-- <a href="https://twitter.com/domoritz"><i class="fab fa-twitter"></i> Twitter</a> -->
+      <a href="mailto:mwaliman@ucla.edu"> mwaliman@ucla.edu</a>
+      <!-- <a href="https://github.com/domoritz"><i class="fab fa-github"></i> GitHub</a> -->
+    </span>
+  </nav>
+</header>
+
+
+    <div class="page-content">
+      <section class="container post">
+  <header class="post-header">
+    <h1 class="post-title">Tagshot und andere Projekte</h1>
+    <p class="post-subtitle">Fotoverwaltung im Browser</p>
+    <p class="post-meta">
+      Published on Mar 17, 2012
+      
+      
+      </p>
+  </header>
+
+  <article class="post-content">
+    <p>In diesem Artikel möchte ich das Fotoverwaltungstool vorstellen, was treffenderweise <em>Tagshot</em> heißt.</p>
+
+<p>Das Programm habe ich mit vier Kommilitonen im Rahmen eines Studienseminars erstellt und soll dabei helfen, die große Anzahl an Photos, die am HPI aufgenommen werden, zu verwalten. Verwalten heißt dabei suchen, taggen, bewerten, herunterladen, löschen und auch nur einfach ansehen um gute Bilder zu finden.</p>
+
+<p>Wir haben das Tool bei uns am HPI bereits in Benutzung und haben etwa 10.000 Bilder in der Datenbank. Dabei ist beim Suchen keine Verzögerung spürbar.</p>
+
+<p>Ein wenig zur Technik. Das Backend ist in <a href="http://rubyonrails.org/">Ruby on Rails</a> geschrieben und sucht nach Bildern in einem bestimmten Verzeichnis. Die Metadaten der Bilder werden in eine Datenbank geschrieben (bei uns <a href="http://www.postgresql.org/">postgreSQL</a>) und Thumbnails erzeugt. Das Frontend ist eine einzige Seite, auf der mit JavaScript die Website dynamisch aufgebaut wird. Auch die gesamte Navigation findet auf einer Seite statt. Als Grundframework für das Frontend haben wir <a href="http://backbonejs.org/">Backbone.js</a> benutzt.</p>
+
+<p>Coole Features von Tagshot sind:</p>
+
+<ul>
+  <li>Taggen und bewerten von Bildern</li>
+  <li>Bilder nach Bewertung und Tags durchsuchen. Dabei können Boolesche Operatoren benutzt werden</li>
+  <li>Schnellvorschau</li>
+  <li>Unendliches Scrollen und dynamisches Nachladen von Bildern</li>
+  <li>Tastaturnavigation für schnelles Bearbeiten</li>
+  <li>Vergrößern/ Verkleinern der Ansicht</li>
+  <li>Detailansicht</li>
+  <li>Verschiedene Auflösungen herunterlade</li>
+  <li>Bearbeiten von mehreren Bildern gleichzeitig</li>
+  <li>Getestet in Webkit und Firefox</li>
+</ul>
+
+<p>Das Projektrepo (Git) und die Projektorganisation (Redmine) sind zur Zeit noch am HPI gehostet, werden aber bald auf <a href="https://github.com/tagshot/tagshot">https://github.com/tagshot/tagshot</a> umziehen. Das Projekt ist immer noch in der Entwicklung und einige Features fehlen noch (drehen von Bildern…), aber Tagshot ist trotzdem schon gut benutzbar und schnell.</p>
+
+<update>Die Quellen sind online auf [https://github.com/tagshot/tagshot](https://github.com/tagshot/tagshot)</update>
+
+<p>Auf Youtube gibt es kleines Demovideo, dass die wichtigsten Grundfunktionen zeigt.</p>
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nB3fcDLNk8g" frameborder="0" allowfullscreen=""></iframe>
+
+  </article>
+
+  <section class="post-sharing">
+    <a class="twitter" href="https://twitter.com/intent/tweet?text=Tagshot und andere Projekte&url=http://localhost:4000/mwaliman/blog/2012/03/tagshot-und-andere-projekte.html&via=&related=" title="Share this post on Twitter"><i class="fab fa-twitter"></i> Tweet</a>
+  </section>
+
+  <div class="blog-links">
+  
+    <div>
+      <i class="fas fa-md fa-chevron-left"></i>
+      <a href="/mwaliman/blog/2011/10/7000000000.html" title="Previous Post: 7000000000">7000000000</a>
+    </div>
+  
+  
+    <div>
+      <a href="/mwaliman/blog/2012/03/shoppingtour-optimizer.html" title="Next Post: ">Shopping tour Optimizer</a>
+      <i class="fas fa-md fa-chevron-right"></i>
+    </div>
+  
+  </div>
+</section>
+
+    </div>
+
+    <footer>
+  <div class="container">
+    <div class="footer-col">
+      Matthew Waliman<br/>
+      <!-- <a href="mailto:mwaliman@ucla.edu">mwaliman@ucla.edu</a> <br/> -->
+      Last updated September 2021
+    </div>
+
+    <div class="footer-col site-desc">Electrical and Computer Engineering M.S. student at UCLA. 
+ <br> <a href="https://github.com/domoritz/domoritz.github.io"> Site Template by Dominik Moritz</a></div>
+  </div>
+</footer>
+
+
+<!-- 
+<div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Matthew Waliman</li><li><a class="u-email" href="mailto:mwaliman@ucla.edu">mwaliman@ucla.edu</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+            <li><a href="https://github.com/andrewhead"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">andrewhead</span></a></li>
+
+            <li><a href="https://www.twitter.com/drewmikehead"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">drewmikehead</span></a></li>
+        </ul>
+</div>
+
+      
+    </div> -->
+    <script>
+  function trim(str) {
+    return str.replace(/^\s+|\s+$/g, '');
+  }
+  var headers = document.querySelectorAll("h2, h3, h4, h5, h6");
+  for (var i=0; i<headers.length; i++) {
+    var h = headers[i];
+    var name = h.getAttribute("id");
+    var title = h.innerHTML;
+    h.innerHTML = '<a href="#' + name + '" class="anchor"><i class="fas fa-hashtag"></i></a>' + trim(title);
+  }
+</script>
+
+  </body>
+</html>
