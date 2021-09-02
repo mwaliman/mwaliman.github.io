@@ -7,10 +7,10 @@
 - title: Roadmap
   image: roadmap.jpg
   description: "Roadmap is a productivity webapp that aims to improve personal goal setting and visualize productivity. Uses Flask, Jquery and SQLite."
-  highlight: 3
+  highlight: 2
 
 - title: Face Morphing
   image: rihanna.gif
   url: https://inst.eecs.berkeley.edu/~cs194-26/fa17/upload/files/proj4/cs194-26-afq/
   description: "For a class project, I produced various morphs and calculate mean faces of a population"
-  highlight: 2
+  highlight: 3

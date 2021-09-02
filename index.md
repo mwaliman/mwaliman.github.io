@@ -56,7 +56,7 @@ Sometimes I also <a href="https://www.youtube.com/watch?v=Q1qJ6_Uwj4A" target="_
   Show All Publications
 </a> -->
 
-## Projects
+<!-- ## Projects
 
 <div class="featured-projects">
   {% assign sorted_projects = site.data.projects | sort: 'highlight' %}
@@ -66,7 +66,7 @@ Sometimes I also <a href="https://www.youtube.com/watch?v=Q1qJ6_Uwj4A" target="_
     {% endif %}
   {% endfor %}
 </div>
-
+ -->
 <div class="news-travel" markdown="1">
 
 <div class="news" markdown="1">
