@@ -3,6 +3,6 @@
   description: PhD Students I am (co-)advising at CMU.
   location: UCSF
   who:
-    - Eli Xie
-    - Ana Cismaru
+    - Eli Xie - Fit statistical models to Fitbit step data 
+    - Ana Cismaru - Trained grey matter segmentation network
   description: Together with Amit Akula, I mentored two students to work on research projects within the Henry Lab.
