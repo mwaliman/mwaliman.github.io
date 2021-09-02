@@ -9,10 +9,8 @@ class: home
 
 <div class="me" markdown="1">
 <picture>
-  <source srcset='/images/b.jpg' />
-  <img
-    src='/images/profyosemite.jpg'
-    alt='Matthew Waliman'>
+  <source srcset='/images/profhawaii.jpg' />
+  <img>
 </picture>
 
 {:.no-list}
