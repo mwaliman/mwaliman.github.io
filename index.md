@@ -26,7 +26,6 @@ I'm an Electrical and Computer Engineering M.S. student at UCLA.
 
 My research interests are Human Computer Interaction, Graphics and Computer Vision. I did my undergrad at UC Berkeley where I worked with <a href="http://www-video.eecs.berkeley.edu/~avz/">Prof. Avideh Zakhor</a> and <a href="https://people.eecs.berkeley.edu/~bjoern/">Prof. Bjoern Hartmann</a>.
 
-Sometimes I also <a href="https://www.youtube.com/watch?v=Q1qJ6_Uwj4A" target="_blank" rel="noopener noreferrer">sing</a>.
 </div>
 
 

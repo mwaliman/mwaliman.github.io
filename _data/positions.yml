@@ -9,13 +9,6 @@
   location: Berkeley, CA
   skills:
     - Machine Learning
-- title: Test Automation Intern
-  years: 2016
-  company: Ayar Labs
-  location: San Francisco, CA
-  skills:
-    - Machine Learning
-    - Python
 - title: Research Assistant
   years: 2015-2018
   company: UC Berkeley
@@ -25,3 +18,10 @@
     - Avideh Zakhor
     - Ren Ng
     - Bjoern Hartmann
+- title: Test Automation Intern
+  years: 2016
+  company: Ayar Labs
+  location: San Francisco, CA
+  skills:
+    - Machine Learning
+    - Python
