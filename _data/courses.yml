@@ -6,4 +6,9 @@
     - title: User Interface Design & Development
     - title: Digital Image Processing
     - title: Artificial Intelligence
-    - title: Efficient Algorithms & Intractable Problems
+- title: UCLA
+  courses:
+    - title: Computer Vision
+    - title: Neural Networks & Deep Learning
+    - title: Pattern Recognition & Machine Learning
+    - title: Engineering Interactive Systems
