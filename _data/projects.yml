@@ -1,16 +1,23 @@
+
+- title: Seeing Sound
+  demo: https://youtu.be/c0Fd9gTmt34
+  image: bus.gif
+  description: "Seeing Sound is an AR/VR project that addresses loss of stereo hearing by developing a set of visual indicators that assist users to localize sounds in their environment."
+  highlight: 1
+
 - title: Gestural Music Interface
   demo: https://www.youtube.com/watch?v=BpilGNdZgV0
   image: maxmsp.jpg
   description: "An instrument that allows musicians to augment vocal performances in real time. Uses gestural input from a Leap Motion controller to trigger chord progressions and vocoder parameters via MAX/MSP."
-  highlight: 1
-
-- title: Roadmap
-  image: roadmap.jpg
-  description: "Roadmap is a productivity webapp that aims to improve personal goal setting and visualize productivity. Uses Flask, Jquery and SQLite."
   highlight: 2
 
 - title: Face Morphing
   image: rihanna.gif
   url: https://inst.eecs.berkeley.edu/~cs194-26/fa17/upload/files/proj4/cs194-26-afq/
-  description: "For a class project, I produced various morphs and calculate mean faces of a population"
+  description: "I produced various morphs and calculated average faces for a population."
   highlight: 3
+
+- title: Roadmap
+  image: roadmap.jpg
+  description: "Roadmap is a productivity webapp that aims to improve personal goal setting and visualize productivity. Uses Flask, Jquery and SQLite."
+  highlight: 4
