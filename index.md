@@ -34,17 +34,6 @@ My research interests are Human Computer Interaction, Graphics and Computer Visi
 <!-- Details are in my [CV]({{ "/cv/" | relative_url }}). -->
 
 
-## Featured Projects
-
-<div class="featured-projects">
-  {% assign sorted_projects = site.data.projects | sort: 'highlight' %}
-  {% for project in sorted_projects %}
-    {% if project.highlight %}
-      {% include project.html project=project %}
-    {% endif %}
-  {% endfor %}
-</div>
-
 ## Publications
 
 <div class="featured-publications">
@@ -66,7 +55,16 @@ My research interests are Human Computer Interaction, Graphics and Computer Visi
   Show All Publications
 </a> -->
 
+## Featured Projects
 
+<div class="featured-projects">
+  {% assign sorted_projects = site.data.projects | sort: 'highlight' %}
+  {% for project in sorted_projects %}
+    {% if project.highlight %}
+      {% include project.html project=project %}
+    {% endif %}
+  {% endfor %}
+</div>
 
 <div class="news-travel" markdown="1">
 
