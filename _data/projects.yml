@@ -20,4 +20,4 @@
 - title: Roadmap
   image: roadmap.jpg
   description: "Roadmap is a productivity webapp that aims to improve personal goal setting and visualize productivity. Uses Flask, Jquery and SQLite."
-  highlight: 4
+  # highlight: 4
